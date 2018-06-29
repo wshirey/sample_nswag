@@ -1,0 +1,34 @@
+﻿{
+  "runtime": "Default",
+  "defaultVariables": "configuration=Debug",
+  "swaggerGenerator": {
+    "webApiToSwagger": {
+      "controllerNames": [],
+      "isAspNetCore": true,
+      "defaultUrlTemplate": "api/{controller}/{id?}",
+      "addMissingPathParameters": false,
+      "defaultPropertyNameHandling": "Default",
+      "defaultReferenceTypeNullHandling": "Null",
+      "defaultEnumHandling": "Integer",
+      "flattenInheritanceHierarchy": false,
+      "generateKnownTypes": true,
+      "generateXmlObjects": false,
+      "generateAbstractProperties": false,
+      "ignoreObsoleteProperties": false,
+      "allowReferencesWithProperties": false,
+      "excludedTypeNames": [],
+      "infoTitle": "My Title",
+      "infoVersion": "1.0.0",
+      "output": "swagger.yaml",
+      "outputType": "OpenApi3",
+      "assemblyPaths": [
+        "bin/$(configuration)/netcoreapp2.1/sample-nswag.dll"
+      ],
+      "referencePaths": [],
+      "operationProcessors": [
+        "sample-nswag:sample_nswag.NSwag.CustomOperationProcessor"
+      ]
+    }
+  },
+  "codeGenerators": {}
+}
